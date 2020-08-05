@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fmradio/player_page.dart';
 
-import 'package:flutter_music_player/player_page.dart';
 
-import 'player_page.dart';
+// import 'player_page.dart';
 
 void main() => runApp(MyApp());
 

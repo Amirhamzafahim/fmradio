@@ -29,8 +29,10 @@ dev_dependencies:
     sdk: flutter
     
   
-  flutter_neumorphic: ^2.0.0
-  # neumorphic: ^0.3.0
+  neumorphic: ^0.3.2
+  flutter_neumorphic: ^3.0.1
+
+
 
 
 # For information on the generic Dart part of this file, see the
