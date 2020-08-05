@@ -30,7 +30,6 @@ class _PlayerPageState extends State<PlayerPage> {
     });
   }
 
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,31 +41,43 @@ class _PlayerPageState extends State<PlayerPage> {
             child: Column(
               children: <Widget>[
                 NeuCard(
-  // State of Neumorphic (may be convex, flat & emboss)
-  curveType: CurveType.flat,
+                  // State of Neumorphic (may be convex, flat & emboss)
+                  curveType: CurveType.flat,
 
-  // Elevation relative to parent. Main constituent of Neumorphism
-  bevel: 10,
+                  // Elevation relative to parent. Main constituent of Neumorphism
+                  bevel: 10,
 
-  // Specified decorations, like `BoxDecoration` but only limited
-  decoration: NeumorphicDecoration(
-    color: Color(0xffE5E5E5),
-    // E5E5E5
-    borderRadius: BorderRadius.circular(15)
-  ),
-height: 170,
-width: 250,
-  // Other arguments such as margin, padding etc. (Like `Container`)
-
-),
+                  // Specified decorations, like `BoxDecoration` but only limited
+                  decoration: NeumorphicDecoration(
+                      color: Color(0xffE5E5E5),
+                      // E5E5E5
+                      borderRadius: BorderRadius.circular(15)),
+                  height: 170,
+                  width: 250,
+                  // Other arguments such as margin, padding etc. (Like `Container`)
+                ),
                 SizedBox(height: 32),
-                // SizedBox(height: 32),
+                Text(
+                  "ROCK FM",
+                  style: TextStyle(
+                      fontSize: 48,
+                      fontWeight: FontWeight.w800,
+                      color: Color.fromRGBO(255, 61, 0, 0.55)),
+                ),
+                Text(
+                  "Online",
+                  style: TextStyle(
+                      fontSize: 48,
+                      fontWeight: FontWeight.w800,
+                      color: Color.fromRGBO(255, 61, 0, 0.55)),
+                ),
+             ///ei jaigai clip path hbe
                 Stack(
                   children: <Widget>[
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 32),
                       width: double.infinity,
-                      height: 24,
+                      height: 10,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
                         color: backgroundColor,
@@ -127,7 +138,7 @@ width: 250,
                   curveType: CurveType.flat,
                   bevel: 10,
                   decoration: NeumorphicDecoration(
-                    
+
                       // color: Color(0xffECF0F3)
                       color: Color(0xffE5E5E5),
                       borderRadius: BorderRadius.circular(15)),
@@ -157,7 +168,7 @@ width: 250,
                           bevel: 10,
                           decoration: NeumorphicDecoration(
                               // color: Color(0xFFE0E5EC),
-                               color: Color(0xffE5E5E5),
+                              color: Color(0xffE5E5E5),
                               borderRadius: BorderRadius.circular(10)),
                           height: 60,
                           width: 60,
@@ -172,7 +183,7 @@ width: 250,
                           bevel: 10,
                           decoration: NeumorphicDecoration(
                               // color: Color(0xFFE0E5EC),
-                               color: Color(0xffE5E5E5),
+                              color: Color(0xffE5E5E5),
                               borderRadius: BorderRadius.circular(10)),
                           height: 60,
                           width: 60,
@@ -187,7 +198,7 @@ width: 250,
                           bevel: 10,
                           decoration: NeumorphicDecoration(
                               // color: Color(0xFFE0E5EC),
-                               color: Color(0xffE5E5E5),
+                              color: Color(0xffE5E5E5),
                               borderRadius: BorderRadius.circular(10)),
                           height: 60,
                           width: 60,

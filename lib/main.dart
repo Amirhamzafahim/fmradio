@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fmradio/player_page.dart';
+import 'dart:async';
+
+import 'package:flutter/services.dart';
 
 
 // import 'player_page.dart';
@@ -11,11 +14,45 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+              debugShowCheckedModeBanner: false,
+          
+              home: Splashscreen(),
+              routes: {'home': (context) => PlayerPage()},
+            );
+  }
+}
+
+class Splashscreen extends StatefulWidget {
+  Splashscreen({Key key}) : super(key: key);
+
+  @override
+  _SplashscreenState createState() => _SplashscreenState();
+}
+
+class _SplashscreenState extends State<Splashscreen> {
+  void startimer() {
+    Timer(Duration(seconds: 5), () {
+      Navigator.of(context).pushReplacementNamed('home');
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    startimer();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+        child: Scaffold(
+      backgroundColor:Colors.white,
+      body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+          image: AssetImage('assets/headphone.png'),
+        )),
       ),
-      home: PlayerPage(),
-    );
+    ));
   }
 }
